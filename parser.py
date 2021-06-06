@@ -59,7 +59,7 @@ parse_table[("VB", "huting")] = ["error"]
 parse_table[("VB", "hoda")] = ["error"]
 parse_table[("VB", "lomo")] = ["lomo"]
 parse_table[("VB", "manuhor")] = ["manuhor"]
-parse_table[("VB", "mida")] = ["mida "]
+parse_table[("VB", "mida")] = ["mida"]
 parse_table[("VB", "EOS")] = ["error"]
 
 

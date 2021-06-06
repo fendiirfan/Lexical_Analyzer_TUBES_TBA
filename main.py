@@ -44,7 +44,7 @@ def parser(sentence):
   parse_table[("VB", "hoda")] = ["error"]
   parse_table[("VB", "lomo")] = ["lomo"]
   parse_table[("VB", "manuhor")] = ["manuhor"]
-  parse_table[("VB", "mida")] = ["mida "]
+  parse_table[("VB", "mida")] = ["mida"]
   parse_table[("VB", "EOS")] = ["error"]
 
 
@@ -240,7 +240,7 @@ def lexicalAnalyzer(kataInput):
   transition_table[('a7','u')]= 'a8'
   transition_table[('a8','h')]='a9'
   transition_table[('a9','o')]= 'a10'
-  transition_table[("a10", "r")] = "a11"
+  transition_table[("a10", 'r')] = "a11"
   transition_table[('a11','#')]='ACCEPT'
   transition_table[('a11',' ')]= 'q27'
 
@@ -289,4 +289,4 @@ sentence = input("Masukkan kata yang ingin diperiksa: ")
 lexicalAnalyzer(sentence)
 
 import time
-time.sleep(20)
+time.sleep(60)
